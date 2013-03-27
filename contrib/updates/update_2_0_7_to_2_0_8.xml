@@ -9,7 +9,7 @@
 		<title lang="en"><![CDATA[Anti Double Post]]></title>
 		<description lang="en"><![CDATA[This MOD allows you to disable double posting.]]></description>
 		<author-notes lang="en"><![CDATA[Several options are available for each specific forum:
-* Enable or not the MOD.
+* Enable or disable the MOD.
 * Allow/disallow administrators to make double posts.
 * Allow/disallow moderators to make double posts.
 * Two possibilities when a double post attempt is detected:
@@ -19,7 +19,7 @@
 
 Next, it's possible to give the permissions to users and groups to double post in a forum where double posts are disallowed.
 
-NOTICE : In order to configure this MOD, you need to edit the forum where you want to install it.]]></author-notes>
+NOTICE : In order to configure this MOD, you need to edit the forum where you want to enable it.]]></author-notes>
 		<author-group>
 			<author>
 				<realname><![CDATA[Romain Kowalski]]></realname>

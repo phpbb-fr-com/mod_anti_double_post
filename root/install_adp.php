@@ -124,6 +124,11 @@ $versions = array(
 	'2.0.10'   => array(
 		// nothing changed in this version
 	),			    
+
+	// Version 2.0.11
+	'2.0.11'   => array(
+		// nothing changed in this version
+	),			    
 );
 
 // Include the UMIL Auto file, it handles the rest

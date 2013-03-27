@@ -35,13 +35,33 @@ NOTICE : In order to configure this MOD, you need to edit the forum where you wa
 				</contributions-group>
 			</author>
 		</author-group>
-		<mod-version>2.0.9</mod-version>
+		<mod-version>2.0.11</mod-version>
 		<installation>
 			<level>easy</level>
-			<time>300</time>
-			<target-version>3.0.9</target-version>
+			<time>120</time>
+			<target-version>3.0.11</target-version>
 		</installation>
 		<history>
+			<entry>
+				<date>2012-11-26</date>
+				<rev-version>2.0.11</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[[FIX] Fixed "Smilie at the begin of the post not parsed" issue (thanks to deejay_xb)]]></change>
+					<change><![CDATA[[UPD] Updated packaged umil to version 1.0.5]]></change>
+					<change><![CDATA[Tested with phpBB 3.0.11 and AutoMOD]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2012-07-31</date>
+				<rev-version>2.0.10</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[[CHG] Changed default settings on install]]></change>
+					<change><![CDATA[[FIX] Fixed AutoMOD installation issue]]></change>
+					<change><![CDATA[[UPD] Updated folder structure]]></change>
+					<change><![CDATA[[UPD] Updated all installation instructions]]></change>
+					<change><![CDATA[Tested with phpBB 3.0.10 and AutoMOD]]></change>
+				</changelog>
+			</entry>
 			<entry>
 				<date>2011-09-21</date>
 				<rev-version>2.0.9</rev-version>
@@ -202,28 +222,14 @@ NOTICE : In order to configure this MOD, you need to edit the forum where you wa
 			<file from="root/umil/*.*" to="umil/*.*"/>
 			<file from="root/install_adp.php" to="install_adp.php"/>
 		</copy>
-		<open src="adm/style/acp_forums.html">
+		<open src="posting.php">
 			<edit>
-				<find><![CDATA[			<!-- IF not S_ADD_ACTION and S_FORUM_ORIG_CAT and S_HAS_SUBFORUMS -->
-				<!-- IF S_FORUM_CAT -->
-					dE('cat_to_link_actions', -1);
-				<!-- ENDIF -->
-			<!-- ENDIF -->]]></find>
-				<action type="replace-with"><![CDATA[			<!-- IF not S_ADD_ACTION and S_FORUM_ORIG_CAT and S_HAS_SUBFORUMS -->
-				<!-- IF S_FORUM_CAT -->
-					dE('cat_to_link_actions', -1);
-    					dE('forum_adp_options', -1);
-				<!-- ENDIF -->
-			<!-- ENDIF -->]]></action>
-			</edit>
-			<edit>
-				<find><![CDATA[			<!-- IF S_FORUM_LINK -->
-			dE('forum_rules_options', -1);
-			<!-- ENDIF -->]]></find>
-				<action type="replace-with"><![CDATA[			<!-- IF S_FORUM_LINK -->
-			dE('forum_rules_options', -1);
-			dE('forum_adp_options', -1);
-			<!-- ENDIF -->]]></action>
+				<find><![CDATA[            //Do the job...
+            $message_parser->message = $adp_post_text . '<br /><br />' . $post_data['adp_text_edit'] . '<br /><br />'. $message_parser->message;
+]]></find>
+				<action type="replace-with"><![CDATA[            //Do the job...
+            $message_parser->message = $adp_post_text . ' <br /><br /> ' . $post_data['adp_text_edit'] . ' <br /><br /> '. $message_parser->message;
+]]></action>
 			</edit>
 		</open>
 		<php-installer><![CDATA[install_adp.php]]></php-installer>

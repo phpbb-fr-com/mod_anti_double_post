@@ -1,0 +1,29 @@
+Share On MOD
+PHP Version: 5.2.17
+DBMS: MySQL(i) 5.1.49-3~bpo50+1-log
+phpBB3 Version: 3.0.8
+
+Lege neue Konfigurationsvariable an: so_status
+FEHLER: Konfigurationsvariable so_status existiert bereits.
+
+Lege neue Konfigurationsvariable an: so_facebook
+FEHLER: Konfigurationsvariable so_facebook existiert bereits.
+
+Lege neue Konfigurationsvariable an: so_twitter
+FEHLER: Konfigurationsvariable so_twitter existiert bereits.
+
+Lege neue Konfigurationsvariable an: so_orkut
+FEHLER: Konfigurationsvariable so_orkut existiert bereits.
+
+Lege neue Konfigurationsvariable an: so_digg
+FEHLER: Konfigurationsvariable so_digg existiert bereits.
+
+Lege neue Konfigurationsvariable an: so_myspace
+FEHLER: Konfigurationsvariable so_myspace existiert bereits.
+
+Lege neue Konfigurationsvariable an: so_delicious
+FEHLER: Konfigurationsvariable so_delicious existiert bereits.
+
+Lege neue Konfigurationsvariable an: so_technorati
+FEHLER: Konfigurationsvariable so_technorati existiert bereits.
+

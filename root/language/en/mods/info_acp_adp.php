@@ -1,12 +1,12 @@
 <?php
 /** 
 *
-* acp_forums [Standard french]
+* info_acp_adp [English]
 * translated originally by PhpBB-fr.com <http://www.phpbb-fr.com/> and phpBB.biz <http://www.phpBB.biz>
 *
 * @package language
-* @version $Id: forums.php,v 1.21 2008/04/10 12:53:34 elglobo Exp $
-* @copyright (c) 2005 phpBB Group 
+* @version $Id: info_acp_adp.php, v2.0.4 2008/04/10 12:53:34 PhpBB-fr.com Exp $
+* @copyright (c) 2008 PhpBB-fr.com 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
 */
@@ -37,9 +37,10 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
+    'ACP_ADP'               => 'Anti Double Post',
 	'ADP_DOUBLE_POST'		=> 'You cannot post because you are the last poster in this topic.<br /><br />%sPlease edit your post%s.',
 
-	'FORUM_ADP'				=> 'Anti-Double Posts MOD',
+	'FORUM_ADP'				=> 'Anti-Double Post MOD',
 	'ADP_ENABLE'			=> 'MOD activation',
 	
 	'ADP_ADMINS'			=> 'Administrators can make double post',

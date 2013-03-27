@@ -1,12 +1,12 @@
 <?php
 /** 
 *
-* acp_forums [Standard french]
-* translated originally by PhpBB-fr.com <http://www.phpbb-fr.com/> and phpBB.biz <http://www.phpBB.biz>
+* permissions_adp [Deutsch - Du]
 *
 * @package language
-* @version $Id: forums.php,v 1.21 2008/04/10 12:53:34 elglobo Exp $
-* @copyright (c) 2005 phpBB Group 
+* @author WileCoyote for http://www.wu-systems.at
+* @version $Id: permissions_adp.php,v 2.0.10 2012/07/31 12:53:34 WileCoyote Exp $
+* @copyright (c) 2012 wu-systems.at 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
 */
@@ -39,7 +39,7 @@ if (empty($lang) || !is_array($lang))
 
 // Adding the permissions
 $lang = array_merge($lang, array(
-	'acl_u_adp_allow'		=> array('lang' => 'Can double post', 'cat' => 'post'),
+	'acl_u_adp_allow'		=> array('lang' => 'Kann aufeinanderfolgende Beiträge verfassen', 'cat' => 'post'),
 ));
 
 ?>

@@ -2,9 +2,9 @@
 <?xml-stylesheet type="text/xsl" href="./contrib/xsl/modx.prosilver.en.xsl"?>
 <!--NOTICE: Please open this file in your web browser. If presented with a security warning, you may safely tell it to allow the blocked content.-->
 <!--For security purposes, please check: http://www.phpbb.com/mods/ for the latest version of this MOD.\nAlthough MODs are checked before being allowed in the MODs Database there is no guarantee that there are no security problems within the MOD.\nNo support will be given for MODs not found within the MODs Database which can be found at http://www.phpbb.com/mods/-->
-<mod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.phpbb.com/mods/xml/modx-1.2.5.xsd">
+<mod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://www.phpbb.com/mods/xml/modx-1.2.6.xsd">
 	<header>
-		<meta name="generator" content="MODX file generated with PP MODX Creator 1.0.1 by tumba25 (phpBB version)"/>
+		<meta name="generator" content="MODX file generated with PP MODX Creator 1.2.6 by tumba25 (phpBB version)"/>
 		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
 		<title lang="en"><![CDATA[Anti Double Post]]></title>
 		<description lang="en"><![CDATA[This MOD allows you to disable double posting.]]></description>
@@ -35,13 +35,21 @@ NOTICE : In order to configure this MOD, you need to edit the forum where you wa
 				</contributions-group>
 			</author>
 		</author-group>
-		<mod-version>2.0.11</mod-version>
+		<mod-version>2.0.12</mod-version>
 		<installation>
 			<level>easy</level>
 			<time>300</time>
 			<target-version>3.0.11</target-version>
 		</installation>
 		<history>
+			<entry>
+				<date>2012-12-20</date>
+				<rev-version>2.0.12</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[[UPD] Updated all xml files to MODx 1.2.6]]></change>
+					<change><![CDATA[[CHG] Changed titles and descriptions of xml files]]></change>
+				</changelog>
+			</entry>
 			<entry>
 				<date>2012-11-26</date>
 				<rev-version>2.0.11</rev-version>
@@ -618,8 +626,8 @@ Purge the cache:
 	2) look at "Purge the cache"
 	3) Click on "Run Now" button right of it
 	4) in the next screen, click on "Yes"
-	5) Remove the installation file (root/install_moderator_can.php) from your Server
-	6) Remove the umil directory (root/umil) with all files in it from your Server
+	5) Remove the installation file (root/install_adp.php) from your Server (if you installed the mod by hand)
+	6) Remove the umil directory (root/umil) with all files in it from your Server (if you installed the mod by hand)
     ]]></diy-instructions>
 	</action-group>
 </mod>

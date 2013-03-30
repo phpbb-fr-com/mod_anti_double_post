@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<?xml-stylesheet type="text/xsl" href="../xsl/modx.prosilver.en.xsl"?>
-<!--NOTICE: Please open this file in your web browser. If presented with a security warning, you may safely tell it to allow the blocked content.-->
-<!--For security purposes, please check: http://www.phpbb.com/mods/ for the latest version of this MOD.\nAlthough MODs are checked before being allowed in the MODs Database there is no guarantee that there are no security problems within the MOD.\nNo support will be given for MODs not found within the MODs Database which can be found at http://www.phpbb.com/mods/-->
+<?xml-stylesheet type="text/xsl" href="modx.prosilver.en.xsl"?>
+<!--For security purposes, please check: https://www.phpbb.com/mods/ for the latest version of this MOD. Although MODs are checked before being allowed in the MODs Database there is no guarantee that there are no security problems within the MOD. No support will be given for MODs not found within the MODs Database which can be found at https://www.phpbb.com/mods/-->
 <mod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://www.phpbb.com/mods/xml/modx-1.2.6.xsd">
 	<header>
-		<meta name="generator" content="MODX file generated with PP MODX Creator 1.2.6 by tumba25 (phpBB version)"/>
 		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
 		<title lang="en"><![CDATA[Update 2.0.7 to 2.0.8]]></title>
 		<description lang="en"><![CDATA[This file provides update instructions for the mod]]></description>
@@ -43,109 +41,34 @@ NOTICE : In order to configure this MOD, you need to edit the forum where you wa
 		</installation>
 		<history>
 			<entry>
-				<date>2008-04-13</date>
-				<rev-version>1.0.0</rev-version>
+				<date>2011-09-21</date>
+				<rev-version>2.0.9</rev-version>
 				<changelog lang="en">
-					<change><![CDATA[First version - hello world !]]></change>
+					<change><![CDATA[[FIX] Anti-Double Post configuration options are only shown on Forums but not Categorie or Link]]></change>
 				</changelog>
 			</entry>
 			<entry>
-				<date>2008-04-17</date>
-				<rev-version>1.0.1</rev-version>
+				<date>2011-09-19</date>
+				<rev-version>2.0.8</rev-version>
 				<changelog lang="en">
-					<change><![CDATA[[FEATURE] Error message appears when clicking the "answer" button, instead of after submitting post.]]></change>
+					<change><![CDATA[[FIX] Permission system is now working as expected]]></change>
+					<change><![CDATA[[CHG] Changed version numbering to meet the php requirements for the version_compare function]]></change>
 				</changelog>
 			</entry>
 			<entry>
-				<date>2008-05-01</date>
-				<rev-version>1.0.2</rev-version>
+				<date>2011-09-19</date>
+				<rev-version>2.0.7</rev-version>
 				<changelog lang="en">
-					<change><![CDATA[[FIX] Double post could be made by quoting a post.]]></change>
+					<change><![CDATA[[FEATURE] Added UMIL to the package and created UMIF installation file]]></change>
+					<change><![CDATA[[ADD] Added Language variable for the installation procedure (phpbb requirement)]]></change>
+					<change><![CDATA[[FIX] Renamed language files to meet the phpbb naming conventions]]></change>
 				</changelog>
 			</entry>
 			<entry>
-				<date>2008-05-25</date>
-				<rev-version>1.0.3</rev-version>
+				<date>2011-09-13</date>
+				<rev-version>2.0.6</rev-version>
 				<changelog lang="en">
-					<change><![CDATA[[Fix] Fixed a bug when quoting a post.]]></change>
-				</changelog>
-			</entry>
-			<entry>
-				<date>2008-06-14</date>
-				<rev-version>1.0.4</rev-version>
-				<changelog lang="en">
-					<change><![CDATA[Welcome MODX 1.2.0]]></change>
-					<change><![CDATA[[Fix] Fixed a bug with img and url bbcodes]]></change>
-				</changelog>
-			</entry>
-			<entry>
-				<date>2008-06-15</date>
-				<rev-version>1.0.5</rev-version>
-				<changelog lang="en">
-					<change><![CDATA[[FIX] Fixed a bug with img and url bbcodes]]></change>
-				</changelog>
-			</entry>
-			<entry>
-				<date>2008-07-09</date>
-				<rev-version>1.0.6</rev-version>
-				<changelog lang="en">
-					<change><![CDATA[[FIX] Fixed a bug when previsualing the double post.]]></change>
-				</changelog>
-			</entry>
-			<entry>
-				<date>2008-07-11</date>
-				<rev-version>1.0.7</rev-version>
-				<changelog lang="en">
-					<change><![CDATA[Welcome phpBB 3.0.2.]]></change>
-					<change><![CDATA[[FIX] Fixed a bug with attach files.]]></change>
-				</changelog>
-			</entry>
-			<entry>
-				<date>2008-08-26</date>
-				<rev-version>2.0.0</rev-version>
-				<changelog lang="en">
-					<change><![CDATA[[FEATURE] ADP parameters are now configured per forum.]]></change>
-					<change><![CDATA[[FEATURE] Display the double post time (by using "%D").]]></change>
-					<change><![CDATA[[FEATURE] Add permissions to users and groups in order to be allowed to double post, even if double posts are disallowed in the forum.]]></change>
-					<change><![CDATA[[FIX] Fix a bug with surveys.]]></change>
-				</changelog>
-			</entry>
-			<entry>
-				<date>2008-09-14</date>
-				<rev-version>2.0.1</rev-version>
-				<changelog lang="en">
-					<change><![CDATA[[FEATURE] Add a link to edit page in the error message.]]></change>
-					<change><![CDATA[[FIX] Delete bbcode in the default separator text.]]></change>
-					<change><![CDATA[[FIX] Verify if some vars exists.]]></change>
-					<change><![CDATA[[FIX] Fixed the SQL query.]]></change>
-					<change><![CDATA[[FIX] Fixed some errors in the install file.]]></change>
-				</changelog>
-			</entry>
-			<entry>
-				<date>2008-09-28</date>
-				<rev-version>2.0.2</rev-version>
-				<changelog lang="en">
-					<change><![CDATA[[FEATURE] Add an install.php file for installing the new permission.]]></change>
-					<change><![CDATA[[FIX] Fixed some errors in the install file.]]></change>
-				</changelog>
-			</entry>
-			<entry>
-				<date>2009-05-24</date>
-				<rev-version>2.0.3</rev-version>
-				<changelog lang="en">
-					<change><![CDATA[[FEATURE] Add a "Apply to all forums" checkbox in order to edit all forums once.]]></change>
-					<change><![CDATA[[FEATURE] Mask ADP settings when forum_type is a category or a link.]]></change>
-					<change><![CDATA[[FIX] Specials chars are now supported in the separator text.]]></change>
-					<change><![CDATA[[FIX] Fixed an error with poll.]]></change>
-				</changelog>
-			</entry>
-			<entry>
-				<date>2009-11-23</date>
-				<rev-version>2.0.4</rev-version>
-				<changelog lang="en">
-					<change><![CDATA[MODx 1.2.3]]></change>
-					<change><![CDATA[phpBB3.0.6]]></change>
-					<change><![CDATA[[FIX] %D is parsed with phpBB's date function]]></change>
+					<change><![CDATA[[FIX] install_mod.xml (first find in last version was wrong)]]></change>
 				</changelog>
 			</entry>
 			<entry>
@@ -162,27 +85,109 @@ NOTICE : In order to configure this MOD, you need to edit the forum where you wa
 				</changelog>
 			</entry>
 			<entry>
-				<date>2011-09-13</date>
-				<rev-version>2.0.6</rev-version>
+				<date>2009-11-23</date>
+				<rev-version>2.0.4</rev-version>
 				<changelog lang="en">
-					<change><![CDATA[[FIX] install_mod.xml (first find in last version was wrong)]]></change>
+					<change><![CDATA[MODx 1.2.3]]></change>
+					<change><![CDATA[phpBB3.0.6]]></change>
+					<change><![CDATA[[FIX] %D is parsed with phpBB's date function]]></change>
 				</changelog>
 			</entry>
 			<entry>
-				<date>2011-09-19</date>
-				<rev-version>2.0.7</rev-version>
+				<date>2009-05-24</date>
+				<rev-version>2.0.3</rev-version>
 				<changelog lang="en">
-					<change><![CDATA[[FEATURE] Added UMIL to the package and created UMIF installation file]]></change>
-					<change><![CDATA[[ADD] Added Language variable for the installation procedure (phpbb requirement)]]></change>
-					<change><![CDATA[[FIX] Renamed language files to meet the phpbb naming conventions]]></change>
+					<change><![CDATA[[FEATURE] Add a "Apply to all forums" checkbox in order to edit all forums once.]]></change>
+					<change><![CDATA[[FEATURE] Mask ADP settings when forum_type is a category or a link.]]></change>
+					<change><![CDATA[[FIX] Specials chars are now supported in the separator text.]]></change>
+					<change><![CDATA[[FIX] Fixed an error with poll.]]></change>
 				</changelog>
 			</entry>
 			<entry>
-				<date>2011-09-19</date>
-				<rev-version>2.0.8</rev-version>
+				<date>2008-09-28</date>
+				<rev-version>2.0.2</rev-version>
 				<changelog lang="en">
-					<change><![CDATA[[FIX] Permission system is now working as expected]]></change>
-					<change><![CDATA[[CHG] Changed version numbering to meet the php requirements for the version_compare function]]></change>
+					<change><![CDATA[[FEATURE] Add an install.php file for installing the new permission.]]></change>
+					<change><![CDATA[[FIX] Fixed some errors in the install file.]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2008-09-14</date>
+				<rev-version>2.0.1</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[[FEATURE] Add a link to edit page in the error message.]]></change>
+					<change><![CDATA[[FIX] Delete bbcode in the default separator text.]]></change>
+					<change><![CDATA[[FIX] Verify if some vars exists.]]></change>
+					<change><![CDATA[[FIX] Fixed the SQL query.]]></change>
+					<change><![CDATA[[FIX] Fixed some errors in the install file.]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2008-08-26</date>
+				<rev-version>2.0.0</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[[FEATURE] ADP parameters are now configured per forum.]]></change>
+					<change><![CDATA[[FEATURE] Display the double post time (by using "%D").]]></change>
+					<change><![CDATA[[FEATURE] Add permissions to users and groups in order to be allowed to double post, even if double posts are disallowed in the forum.]]></change>
+					<change><![CDATA[[FIX] Fix a bug with surveys.]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2008-07-11</date>
+				<rev-version>1.0.7</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[Welcome phpBB 3.0.2.]]></change>
+					<change><![CDATA[[FIX] Fixed a bug with attach files.]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2008-07-09</date>
+				<rev-version>1.0.6</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[[FIX] Fixed a bug when previsualing the double post.]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2008-06-15</date>
+				<rev-version>1.0.5</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[[FIX] Fixed a bug with img and url bbcodes]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2008-06-14</date>
+				<rev-version>1.0.4</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[Welcome MODX 1.2.0]]></change>
+					<change><![CDATA[[Fix] Fixed a bug with img and url bbcodes]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2008-05-25</date>
+				<rev-version>1.0.3</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[[Fix] Fixed a bug when quoting a post.]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2008-05-01</date>
+				<rev-version>1.0.2</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[[FIX] Double post could be made by quoting a post.]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2008-04-17</date>
+				<rev-version>1.0.1</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[[FEATURE] Error message appears when clicking the "answer" button, instead of after submitting post.]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2008-04-13</date>
+				<rev-version>1.0.0</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[First version - hello world !]]></change>
 				</changelog>
 			</entry>
 		</history>

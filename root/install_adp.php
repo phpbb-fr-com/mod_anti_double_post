@@ -58,9 +58,39 @@ $language_file = 'mods/info_acp_adp';
 * The version numbering must otherwise be compatible with the version_compare function - http://php.net/manual/en/function.version-compare.php
 */
 $versions = array(
-    //Version 2.0.4
-	'2.0.4'    => array(
+	'2.0.12' => array(
+		// nothing changed in this version
+	),
 
+	'2.0.11' => array(
+		// nothing changed in this version
+	),
+
+	'2.0.10' => array(
+		// nothing changed in this version
+	),
+
+	'2.0.9' => array(
+		// nothing changed in this version
+	),
+
+	'2.0.8' => array(
+		// nothing changed in this version
+	),
+
+	'2.0.7' => array(
+		// nothing changed in this version
+	),
+
+	'2.0.6' => array(
+		// nothing changed in this version
+	),
+
+	'2.0.5' => array(
+		// nothing changed in this version
+	),
+
+	'2.0.4' => array(
 		// Add permission settings
 		'permission_add' => array(
 			array('u_adp_allow', true),
@@ -76,16 +106,16 @@ $versions = array(
 
 		// Add the new anti-double post forums columns to the forums table
 		'table_column_add' => array(
-			array(FORUMS_TABLE, 'adp_enable', array('TINT:1', '1')),
-			array(FORUMS_TABLE, 'adp_admins', array('TINT:1', '0')),
-			array(FORUMS_TABLE, 'adp_modos', array('TINT:1', '0')),
-			array(FORUMS_TABLE, 'adp_auto_edit', array('TINT:1', '1')),
-			array(FORUMS_TABLE, 'adp_text_edit', array('VCHAR', '-- %D --')),
-			array(FORUMS_TABLE, 'adp_always', array('TINT:1', '1')),
-			array(FORUMS_TABLE, 'adp_days', array('INT:11', '1')),
-			array(FORUMS_TABLE, 'adp_hours', array('INT:11', '0')),
-			array(FORUMS_TABLE, 'adp_mins', array('INT:11', '0')),
-			array(FORUMS_TABLE, 'adp_secs', array('INT:11', '0')),
+			array('phpbb_forums', 'adp_enable', array('TINT:1', 1)),
+			array('phpbb_forums', 'adp_admins', array('TINT:1', 0)),
+			array('phpbb_forums', 'adp_modos', array('TINT:1', 0)),
+			array('phpbb_forums', 'adp_auto_edit', array('TINT:1', 1)),
+			array('phpbb_forums', 'adp_text_edit', array('VCHAR', '-- %D --')),
+			array('phpbb_forums', 'adp_always', array('TINT:1', 1)),
+			array('phpbb_forums', 'adp_days', array('INT:11', 1)),
+			array('phpbb_forums', 'adp_hours', array('INT:11', 0)),
+			array('phpbb_forums', 'adp_mins', array('INT:11', 0)),
+			array('phpbb_forums', 'adp_secs', array('INT:11', 0)),
 		),
 
 		//Cache purge
@@ -94,45 +124,6 @@ $versions = array(
 			array(), // Purge the forum's cache folder
 		),
 	),
-
-	// Version 2.0.5
-	'2.0.5'    => array(
-		// nothing changed in this version
-	),			
-
-	// Version 2.0.6
-	'2.0.6'    => array(
-		// nothing changed in this version
-	),			
-
-	// Version 2.0.7
-	'2.0.7'    => array(
-		// nothing changed in this version
-	),			
-
-	// Version 2.0.8
-	'2.0.8'    => array(
-		// nothing changed in this version
-	),			
-
-	// Version 2.0.9
-	'2.0.9'    => array(
-		// nothing changed in this version
-	),			    
-
-	// Version 2.0.10
-	'2.0.10'   => array(
-		// nothing changed in this version
-	),			    
-
-	// Version 2.0.11
-	'2.0.11'   => array(
-		// nothing changed in this version
-	),			    
-	// Version 2.0.12
-	'2.0.12'   => array(
-		// nothing changed in this version
-	),			    
 );
 
 // Include the UMIL Auto file, it handles the rest
